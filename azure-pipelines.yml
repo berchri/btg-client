@@ -1,0 +1,68 @@
+# Node.js with React
+# Build a Node.js project that uses React.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '20.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+  displayName: 'npm install'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.SourcesDirectory)'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)-main.zip'
+    verbose: true
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.ArtifactStagingDirectory)'
+    Contents: '$(Build.BuildId)-main.zip'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/artifactMain'
+  displayName: 'Copy files to artifactMain'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/artifactMain'
+    ArtifactName: 'artifactMain'
+    publishLocation: 'Container'
+  displayName: 'Publish artifactMain'
+
+- script: |
+    npm run build
+  displayName: 'npm run build'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.SourcesDirectory)/build'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId)-build.zip'
+    verbose: true
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.ArtifactStagingDirectory)'
+    Contents: '$(Build.BuildId)-build.zip'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/artifactBuild'
+  displayName: 'Copy files to artifactBuild'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/artifactBuild'
+    ArtifactName: 'artifactBuild'
+    publishLocation: 'Container'
+  displayName: 'Publish artifactBuild'

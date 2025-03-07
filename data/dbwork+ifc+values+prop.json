@@ -1,0 +1,5946 @@
+{
+  "_id": {
+    "$oid": "671f9b185205af0d9358fe6e"
+  },
+  "bimqProjectID": 2223,
+  "bimqRequirementsID": 19603238,
+  "configurationData": [
+    {
+      "id": 19603241,
+      "propertySettingsList": [
+        {
+          "id": "CompoundStructWidth",
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "exportPosition": "root",
+          "origin": "Revit",
+          "min": "",
+          "max": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true,
+          "active": true,
+          "defaultValue": ""
+        },
+        {
+          "id": 19603281,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 19603751,
+          "inputType": "boolean",
+          "name": "Außenbauteil",
+          "nameUI": "",
+          "defaultValue": true,
+          "changeable": true,
+          "active": true,
+          "typeNameTrue": "AB",
+          "typeNameFalse": "IB",
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcBoolean",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20663138,
+          "inputType": "boolean",
+          "name": "Wasserundurchlässig",
+          "nameUI": "",
+          "defaultValue": true,
+          "changeable": true,
+          "active": true,
+          "typeNameTrue": "WU",
+          "typeNameFalse": "",
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcBoolean",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346123,
+          "inputType": "select",
+          "name": "Schalungsart",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "1Häuptig",
+              "nrValue": "",
+              "shortname": "1H"
+            },
+            {
+              "value": "2Häuptig",
+              "nrValue": "",
+              "shortname": "2H"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346126,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 19669025,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Ortbetonwand",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20053039,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.5.1",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "WA_STB",
+        "columns": "",
+        "itwoKey": "WA-BET",
+        "revitFamilyBasisSettingsListIndex": 8,
+        "revitCategory": "OST_Walls",
+        "revitFamily": "Basiswand",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 19603281,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 19603751,
+            "name": "Außenbauteil",
+            "value": ""
+          },
+          {
+            "id": 20663138,
+            "name": "Wasserundurchlässig",
+            "value": ""
+          },
+          {
+            "id": 20346123,
+            "name": "Schalungsart",
+            "value": ""
+          },
+          {
+            "id": 20346126,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 19669025,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20053039,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Wasserundurchlässig",
+            "id": 20663138
+          },
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 19603281
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Außenbauteil",
+            "id": 19603751
+          },
+          {
+            "name": "Schalungsart",
+            "id": 20346123
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 20346126
+          },
+          {
+            "name": "Beschreibung",
+            "id": 19669025
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20053039
+          }
+        ]
+      }
+    },
+    {
+      "id": 20967926,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20967965,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20967979,
+          "inputType": "select",
+          "name": "Schalungsart",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "2Häuptig",
+              "nrValue": "",
+              "shortname": "2H"
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20967982,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20967992,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Kollektorwand",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20967994,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.5.6",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "WA_KOLL_STB",
+        "columns": "",
+        "itwoKey": "WA-KW",
+        "revitFamilyBasisSettingsListIndex": 8,
+        "revitCategory": "OST_Walls",
+        "revitFamily": "Basiswand",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 20967965,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20967979,
+            "name": "Schalungsart",
+            "value": ""
+          },
+          {
+            "id": 20967982,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 20967992,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20967994,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20967965
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Schalungsart",
+            "id": 20967979
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 20967982
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20967992
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20967994
+          }
+        ]
+      }
+    },
+    {
+      "id": 20967927,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20968148,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20968162,
+          "inputType": "select",
+          "name": "Schalungsart",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "2Häuptig",
+              "nrValue": "",
+              "shortname": "2H"
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20968164,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20968166,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Lichtschachtwand",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20968168,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.5.7",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "WA_LSW_STB",
+        "columns": "",
+        "itwoKey": "WA-LSW",
+        "revitFamilyBasisSettingsListIndex": 8,
+        "revitCategory": "OST_Walls",
+        "revitFamily": "Basiswand",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 20968148,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20968162,
+            "name": "Schalungsart",
+            "value": ""
+          },
+          {
+            "id": 20968164,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 20968166,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20968168,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20968148
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Schalungsart",
+            "id": 20968162
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 20968164
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20968166
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20968168
+          }
+        ]
+      }
+    },
+    {
+      "id": 19669022,
+      "propertySettingsList": [
+        {
+          "name": "Breite",
+          "nameUI": "Breite",
+          "origin": "Revit",
+          "id": "Breite",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "nameUI": "Länge",
+          "name": "Höhe",
+          "origin": "Revit",
+          "id": "Höhe",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 19669036,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346361,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 19669029,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Ortbetonstütze",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346356,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.6.1",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "ST_STB_RECHTECKIG",
+        "columns": "",
+        "itwoKey": "ST-BET",
+        "revitFamilyBasisSettingsListIndex": "4",
+        "revitCategory": "OST_StructuralColumns",
+        "revitFamily": "Stütze - rechteckig 250 x 250",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "Breite",
+            "name": "Breite",
+            "value": ""
+          },
+          {
+            "id": "Höhe",
+            "name": "Höhe",
+            "value": ""
+          },
+          {
+            "id": 19669036,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20346361,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 19669029,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20346356,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "id": "Breite",
+            "name": "Breite",
+            "value": "Dicke"
+          },
+          {
+            "id": "Höhe",
+            "name": "Höhe",
+            "value": ""
+          },
+          {
+            "id": 19669036,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20346361,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 19669029,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20346356,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": 20656638,
+      "propertySettingsList": [
+        {
+          "name": "Durchmesser",
+          "nameUI": "Durchmesser",
+          "origin": "Revit",
+          "id": "Durchmesser",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20656672,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20656710,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20656640,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Ortbetonstütze",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20656702,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.6.1",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "ST_STB_RUND",
+        "columns": "",
+        "itwoKey": "ST-BET",
+        "revitFamilyBasisSettingsListIndex": "5",
+        "revitCategory": "OST_StructuralColumns",
+        "revitFamily": "Stütze - rund 250",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "Durchmesser",
+            "name": "Durchmesser",
+            "value": ""
+          },
+          {
+            "id": 20656672,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20656710,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 20656640,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20656702,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "id": "Durchmesser",
+            "name": "Durchmesser",
+            "value": "Dicke"
+          },
+          {
+            "id": 20656672,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20656710,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 20656640,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20656702,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": 19810142,
+      "propertySettingsList": [
+        {
+          "name": "Breite",
+          "nameUI": "Breite",
+          "origin": "Revit",
+          "id": "Breite",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "name": "Höhe",
+          "nameUI": "Höhe",
+          "origin": "Revit",
+          "id": "Höhe",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20560080,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20655914,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20560070,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Unterzug",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20568505,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.8.1",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "TR_UZ_STB",
+        "columns": "",
+        "itwoKey": "TR-UZ",
+        "revitFamilyBasisSettingsListIndex": "7",
+        "revitCategory": "OST_StructuralFraming",
+        "revitFamily": "Träger 250 x 500",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "Breite",
+            "name": "Breite",
+            "value": ""
+          },
+          {
+            "id": "Höhe",
+            "name": "Höhe",
+            "value": ""
+          },
+          {
+            "id": 20560080,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20655914,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 20560070,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20568505,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20560080
+          },
+          {
+            "name": "Breite",
+            "id": "Breite"
+          },
+          {
+            "name": "Höhe",
+            "id": "Höhe"
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 20655914
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20560070
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20568505
+          }
+        ]
+      }
+    },
+    {
+      "id": 20560041,
+      "propertySettingsList": [
+        {
+          "name": "Breite",
+          "nameUI": "Breite",
+          "origin": "Revit",
+          "id": "Breite",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "name": "Höhe",
+          "nameUI": "Höhe",
+          "origin": "Revit",
+          "id": "Höhe",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20560137,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20655886,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20560127,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Oberzug",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20568504,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.8.2",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "TR_OZ_STB",
+        "columns": "",
+        "itwoKey": "TR-OZ",
+        "revitFamilyBasisSettingsListIndex": "7",
+        "revitCategory": "OST_StructuralFraming",
+        "revitFamily": "Träger 250 x 500",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "Breite",
+            "name": "Breite",
+            "value": ""
+          },
+          {
+            "id": "Höhe",
+            "name": "Höhe",
+            "value": ""
+          },
+          {
+            "id": 20560137,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20655886,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 20560127,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20568504,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20560137
+          },
+          {
+            "name": "Breite",
+            "id": "Breite"
+          },
+          {
+            "name": "Höhe",
+            "id": "Höhe"
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 20655886
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20560127
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20568504
+          }
+        ]
+      }
+    },
+    {
+      "id": 20568508,
+      "propertySettingsList": [
+        {
+          "name": "Breite",
+          "nameUI": "Breite",
+          "origin": "Revit",
+          "id": "Breite",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "name": "Höhe",
+          "nameUI": "Höhe",
+          "origin": "Revit",
+          "id": "Höhe",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20568547,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20568565,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.8.3",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20568537,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Deckensprung",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "TR_DSP_STB",
+        "columns": "",
+        "itwoKey": "TR-DS",
+        "revitFamilyBasisSettingsListIndex": "7",
+        "revitCategory": "OST_StructuralFraming",
+        "revitFamily": "Träger 250 x 500",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "Breite",
+            "name": "Breite",
+            "value": ""
+          },
+          {
+            "id": "Höhe",
+            "name": "Höhe",
+            "value": ""
+          },
+          {
+            "id": 20568547,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20568565,
+            "name": "Ordnungszahl",
+            "value": ""
+          },
+          {
+            "id": 20568537,
+            "name": "Beschreibung",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20568547
+          },
+          {
+            "name": "Breite",
+            "id": "Breite"
+          },
+          {
+            "name": "Höhe",
+            "id": "Höhe"
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20568565
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20568537
+          }
+        ]
+      }
+    },
+    {
+      "id": 20645514,
+      "propertySettingsList": [
+        {
+          "name": "Breite",
+          "nameUI": "Breite",
+          "origin": "Revit",
+          "id": "Breite",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "name": "Länge",
+          "nameUI": "Länge",
+          "origin": "Revit",
+          "id": "Länge",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "name": "h",
+          "nameUI": "Höhe",
+          "origin": "Revit",
+          "id": "h",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20661151,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20645540,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Einzelfundament",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20645542,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.3.2",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "FUN_EIN_STB",
+        "columns": "",
+        "itwoKey": "FUN-EIN",
+        "revitFamilyBasisSettingsListIndex": "6",
+        "revitCategory": "OST_StructuralFoundation",
+        "revitFamily": "Einzelfundament 1500 x 1500 x 500",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "Breite",
+            "name": "Breite",
+            "value": ""
+          },
+          {
+            "id": "Länge",
+            "name": "Länge",
+            "value": ""
+          },
+          {
+            "id": "h",
+            "name": "h",
+            "value": "Höhe"
+          },
+          {
+            "id": 20661151,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20645540,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20645542,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20661151
+          },
+          {
+            "name": "Breite",
+            "id": "Breite"
+          },
+          {
+            "name": "Länge",
+            "id": "Länge"
+          },
+          {
+            "name": "h",
+            "id": "h"
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20645540
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20645542
+          }
+        ]
+      }
+    },
+    {
+      "id": 20645515,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20661143,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20645546,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Streifenfundament",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20645548,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.3.3",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "FUN_STR_STB",
+        "columns": "",
+        "itwoKey": "FUN-STR",
+        "revitFamilyBasisSettingsListIndex": 8,
+        "revitCategory": "OST_Walls",
+        "revitFamily": "Basiswand",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 20661143,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20645546,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20645548,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20661143
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20645546
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20645548
+          }
+        ]
+      }
+    },
+    {
+      "id": 20646337,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20672719,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C12/15",
+              "nrValue": "",
+              "shortname": "C12/15"
+            },
+            {
+              "value": "C16/20",
+              "nrValue": "",
+              "shortname": "C16/20"
+            },
+            {
+              "value": "C8/10",
+              "nrValue": "",
+              "shortname": "C8/10"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20646339,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Sauberkeitsschicht",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20646341,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.3.1",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "SAUB_BET",
+        "columns": "",
+        "itwoKey": "GR-SAU",
+        "revitFamilyBasisSettingsListIndex": "2",
+        "revitCategory": "OST_Floors",
+        "revitFamily": "Geschossdecke",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 20672719,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20646339,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20646341,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20672719
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20646339
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20646341
+          }
+        ]
+      }
+    },
+    {
+      "id": 20645516,
+      "propertySettingsList": [
+        {
+          "name": "Breite",
+          "nameUI": "Breite",
+          "origin": "Revit",
+          "id": "Breite",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "name": "Höhe",
+          "nameUI": "Höhe",
+          "origin": "Revit",
+          "id": "Höhe",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20661135,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20645552,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Pfahlrost",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20645554,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.3.4",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "FUN_PFKB_STB",
+        "columns": "",
+        "itwoKey": "FUN-PKB",
+        "revitFamilyBasisSettingsListIndex": "7",
+        "revitCategory": "OST_StructuralFraming",
+        "revitFamily": "Träger 250 x 500",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "Breite",
+            "name": "Breite",
+            "value": ""
+          },
+          {
+            "id": "Höhe",
+            "name": "Höhe",
+            "value": ""
+          },
+          {
+            "id": 20661135,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20645552,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20645554,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20661135
+          },
+          {
+            "name": "Breite",
+            "id": "Breite"
+          },
+          {
+            "name": "Höhe",
+            "id": "Höhe"
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20645552
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20645554
+          }
+        ]
+      }
+    },
+    {
+      "id": 20645518,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20660707,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20743925,
+          "inputType": "boolean",
+          "name": "Wasserundurchlässig",
+          "nameUI": "",
+          "defaultValue": true,
+          "changeable": true,
+          "active": true,
+          "typeNameTrue": "WU",
+          "typeNameFalse": "",
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcBoolean",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20645558,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Bodenplatte",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20645560,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.4.1",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "BPL_STB",
+        "columns": "",
+        "itwoKey": "BPL-BET",
+        "revitFamilyBasisSettingsListIndex": "2",
+        "revitCategory": "OST_Floors",
+        "revitFamily": "Geschossdecke",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 20660707,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20743925,
+            "name": "Wasserundurchlässig",
+            "value": ""
+          },
+          {
+            "id": 20645558,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20645560,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Wasserundurchlässig",
+            "id": 20743925
+          },
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20660707
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20645558
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20645560
+          }
+        ]
+      }
+    },
+    {
+      "id": 20645519,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20660715,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20645564,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Monolithische Bodenplatte",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20645566,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.4.2",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "BPL_MONL_STB",
+        "columns": "",
+        "itwoKey": "MBPL-BET",
+        "revitFamilyBasisSettingsListIndex": "2",
+        "revitCategory": "OST_Floors",
+        "revitFamily": "Geschossdecke",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 20660715,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20645564,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20645566,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20660715
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20645564
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20645566
+          }
+        ]
+      }
+    },
+    {
+      "id": 19806840,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 19820412,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21144102,
+          "inputType": "boolean",
+          "name": "Wasserundurchlässig",
+          "nameUI": "",
+          "defaultValue": true,
+          "changeable": true,
+          "active": true,
+          "typeNameTrue": "WU",
+          "typeNameFalse": "",
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcBoolean",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346416,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 19806844,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Decke",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346414,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.7.1",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "DE_STB",
+        "columns": "",
+        "itwoKey": "DE-BET",
+        "revitFamilyBasisSettingsListIndex": "2",
+        "revitCategory": "OST_Floors",
+        "revitFamily": "Geschossdecke",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 19820412,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 21144102,
+            "name": "Wasserundurchlässig",
+            "value": ""
+          },
+          {
+            "id": 20346416,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 19806844,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20346414,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Wasserundurchlässig",
+            "id": 21144102
+          },
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 19820412
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 20346416
+          },
+          {
+            "name": "Beschreibung",
+            "id": 19806844
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20346414
+          }
+        ]
+      }
+    },
+    {
+      "id": 20346499,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20346513,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346575,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346503,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Balkondecke",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346509,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.7.3",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "DE_BAL_STB",
+        "columns": "",
+        "itwoKey": "DE-BAL",
+        "revitFamilyBasisSettingsListIndex": "2",
+        "revitCategory": "OST_Floors",
+        "revitFamily": "Geschossdecke",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 20346513,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20346575,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 20346503,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20346509,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20346513
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 20346575
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20346503
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20346509
+          }
+        ]
+      }
+    },
+    {
+      "id": 20346500,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 20346593,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346655,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346583,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Podest",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346589,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.7.4",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "DE_POD_STB",
+        "columns": "",
+        "itwoKey": "DE-POD",
+        "revitFamilyBasisSettingsListIndex": "2",
+        "revitCategory": "OST_Floors",
+        "revitFamily": "Geschossdecke",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 20346593,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20346655,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 20346583,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20346589,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 20346593
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 20346655
+          },
+          {
+            "name": "Beschreibung",
+            "id": 20346583
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20346589
+          }
+        ]
+      }
+    },
+    {
+      "id": 21188823,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 21188833,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21188872,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21188888,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Rampe",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21188844,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.7.5",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "DE_RAM_STB",
+        "columns": "",
+        "itwoKey": "DE-RAM",
+        "revitFamilyBasisSettingsListIndex": "2",
+        "revitCategory": "OST_Floors",
+        "revitFamily": "Geschossdecke",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 21188833,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 21188872,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 21188888,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 21188844,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 21188833
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 21188872
+          },
+          {
+            "name": "Beschreibung",
+            "id": 21188888
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 21188844
+          }
+        ]
+      }
+    },
+    {
+      "id": 21440447,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 21440532,
+          "inputType": "select",
+          "name": "Dämmungsart",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "XPS",
+              "nrValue": "",
+              "shortname": "XPS"
+            },
+            {
+              "value": "Schaumglas",
+              "nrValue": "",
+              "shortname": "Schaumglas"
+            },
+            {
+              "value": "Schaumglas Heißbitumen",
+              "nrValue": "",
+              "shortname": "Schaumglas Heißbitumen"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21440504,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Dämmung unter Bodenplatten",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21440453,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.50.1",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "DAEM_UBPL",
+        "columns": "",
+        "itwoKey": "DAEM-UBPL",
+        "revitFamilyBasisSettingsListIndex": "2",
+        "revitCategory": "OST_Floors",
+        "revitFamily": "Geschossdecke",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 21440532,
+            "name": "Dämmungsart",
+            "value": ""
+          },
+          {
+            "id": 21440504,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 21440453,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Dämmungsart",
+            "id": 21440532
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Beschreibung",
+            "id": 21440504
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 21440453
+          }
+        ]
+      }
+    },
+    {
+      "id": 19671464,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 19671668,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346293,
+          "inputType": "select",
+          "name": "Schalungsart",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "1Häuptig",
+              "nrValue": "",
+              "shortname": "1H"
+            },
+            {
+              "value": "2Häuptig",
+              "nrValue": "",
+              "shortname": "2H"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346294,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 19671649,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Attikawand",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20053043,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.5.3",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "WA_ATT_STB",
+        "columns": "",
+        "itwoKey": "WA-BET-ATT",
+        "revitFamilyBasisSettingsListIndex": 8,
+        "revitCategory": "OST_Walls",
+        "revitFamily": "Basiswand",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 19671668,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20346293,
+            "name": "Schalungsart",
+            "value": ""
+          },
+          {
+            "id": 20346294,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 19671649,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20053043,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 19671668
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Schalungsart",
+            "id": 20346293
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 20346294
+          },
+          {
+            "name": "Beschreibung",
+            "id": 19671649
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20053043
+          }
+        ]
+      }
+    },
+    {
+      "id": 19671465,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 19671774,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20577592,
+          "inputType": "select",
+          "name": "Schalungsart",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "1Häuptig",
+              "nrValue": "",
+              "shortname": "1H"
+            },
+            {
+              "value": "2Häuptig",
+              "nrValue": "",
+              "shortname": "2H"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21181007,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 1,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 19671755,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Brüstungswand",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20053044,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.5.4",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "WA_BR_STB",
+        "columns": "",
+        "itwoKey": "WA-BET-BR",
+        "revitFamilyBasisSettingsListIndex": 8,
+        "revitCategory": "OST_Walls",
+        "revitFamily": "Basiswand",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 19671774,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20577592,
+            "name": "Schalungsart",
+            "value": ""
+          },
+          {
+            "id": 21181007,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 19671755,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20053044,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 19671774
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Schalungsart",
+            "id": 20577592
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 21181007
+          },
+          {
+            "name": "Beschreibung",
+            "id": 19671755
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20053044
+          }
+        ]
+      }
+    },
+    {
+      "id": 19671466,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 19671562,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346165,
+          "inputType": "select",
+          "name": "Schalungsart",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "1Häuptig",
+              "nrValue": "",
+              "shortname": "1H"
+            },
+            {
+              "value": "2Häuptig",
+              "nrValue": "",
+              "shortname": "2H"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20346168,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 19671543,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Aufzugsschachtwand",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 20053041,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.5.2",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "WA_AUF_STB",
+        "columns": "",
+        "itwoKey": "WA-BET-AUF",
+        "revitFamilyBasisSettingsListIndex": 8,
+        "revitCategory": "OST_Walls",
+        "revitFamily": "Basiswand",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 19671562,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 20346165,
+            "name": "Schalungsart",
+            "value": ""
+          },
+          {
+            "id": 20346168,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 19671543,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 20053041,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 19671562
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Schalungsart",
+            "id": 20346165
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 20346168
+          },
+          {
+            "name": "Beschreibung",
+            "id": 19671543
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 20053041
+          }
+        ]
+      }
+    },
+    {
+      "id": 21503365,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 21503652,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            },
+            {
+              "value": "C8/10",
+              "nrValue": "",
+              "shortname": "C8/10"
+            },
+            {
+              "value": "C12/15",
+              "nrValue": "",
+              "shortname": "C12/15"
+            },
+            {
+              "value": "C16/20",
+              "nrValue": "",
+              "shortname": "C16/20"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21513241,
+          "inputType": "boolean",
+          "name": "Wasserundurchlässig",
+          "nameUI": "",
+          "defaultValue": true,
+          "changeable": true,
+          "active": true,
+          "typeNameTrue": "WU",
+          "typeNameFalse": "",
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcBoolean",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21503692,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Frei definierte Bodenplatte",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21503697,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.99.1",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "BPL_FRI",
+        "columns": "",
+        "itwoKey": "FRI-BPL",
+        "revitFamilyBasisSettingsListIndex": "2",
+        "revitCategory": "OST_Floors",
+        "revitFamily": "Geschossdecke",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 21503652,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 21513241,
+            "name": "Wasserundurchlässig",
+            "value": ""
+          },
+          {
+            "id": 21503692,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 21503697,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Wasserundurchlässig",
+            "id": 21513241
+          },
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 21503652
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Beschreibung",
+            "id": 21503692
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 21503697
+          }
+        ]
+      }
+    },
+    {
+      "id": 21503366,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 21503915,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C12/15",
+              "nrValue": "",
+              "shortname": "C12/15"
+            },
+            {
+              "value": "C16/20",
+              "nrValue": "",
+              "shortname": "C16/20"
+            },
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21503951,
+          "inputType": "boolean",
+          "name": "Außenbauteil",
+          "nameUI": "",
+          "defaultValue": true,
+          "changeable": true,
+          "active": true,
+          "typeNameTrue": "AB",
+          "typeNameFalse": "IB",
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcBoolean",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21503980,
+          "inputType": "boolean",
+          "name": "Wasserundurchlässig",
+          "nameUI": "",
+          "defaultValue": true,
+          "changeable": true,
+          "active": true,
+          "typeNameTrue": "WU",
+          "typeNameFalse": "",
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcBoolean",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21503972,
+          "inputType": "select",
+          "name": "Schalungsart",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "1Häuptig",
+              "nrValue": "",
+              "shortname": "1H"
+            },
+            {
+              "value": "2Häuptig",
+              "nrValue": "",
+              "shortname": "2H"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21503975,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21503954,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Frei definierte Wand",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21503959,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.99.2",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "WA_FRI",
+        "columns": "",
+        "itwoKey": "FRI-WA",
+        "revitFamilyBasisSettingsListIndex": 8,
+        "revitCategory": "OST_Walls",
+        "revitFamily": "Basiswand",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 21503915,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 21503951,
+            "name": "Außenbauteil",
+            "value": ""
+          },
+          {
+            "id": 21503980,
+            "name": "Wasserundurchlässig",
+            "value": ""
+          },
+          {
+            "id": 21503972,
+            "name": "Schalungsart",
+            "value": ""
+          },
+          {
+            "id": 21503975,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 21503954,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 21503959,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Wasserundurchlässig",
+            "id": 21503980
+          },
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 21503915
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Außenbauteil",
+            "id": 21503951
+          },
+          {
+            "name": "Schalungsart",
+            "id": 21503972
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 21503975
+          },
+          {
+            "name": "Beschreibung",
+            "id": 21503954
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 21503959
+          }
+        ]
+      }
+    },
+    {
+      "id": 21503367,
+      "propertySettingsList": [
+        {
+          "name": "Breite",
+          "nameUI": "Breite",
+          "origin": "Revit",
+          "id": "Breite",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "nameUI": "Höhe",
+          "name": "Höhe",
+          "origin": "Revit",
+          "id": "Höhe",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 21503991,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            },
+            {
+              "value": "C12/15",
+              "nrValue": "",
+              "shortname": "C12/15"
+            },
+            {
+              "value": "C16/20",
+              "nrValue": "",
+              "shortname": "C16/20"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21504041,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21503988,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Frei definierte Stütze",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21504029,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.99.3",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "ST_RECHTECKIG_FRI",
+        "columns": "",
+        "itwoKey": "FRI-ST",
+        "revitFamilyBasisSettingsListIndex": "4",
+        "revitCategory": "OST_StructuralColumns",
+        "revitFamily": "Stütze - rechteckig 250 x 250",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "Breite",
+            "name": "Breite",
+            "value": ""
+          },
+          {
+            "id": "Höhe",
+            "name": "Höhe",
+            "value": ""
+          },
+          {
+            "id": 21503991,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 21504041,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 21503988,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 21504029,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "id": "Breite",
+            "name": "Breite",
+            "value": ""
+          },
+          {
+            "id": "Höhe",
+            "name": "Höhe",
+            "value": ""
+          },
+          {
+            "id": 21503991,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 21504041,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 21503988,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 21504029,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": 21503368,
+      "propertySettingsList": [
+        {
+          "name": "CompoundStructWidth",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "exportPosition": "root",
+          "id": "CompoundStructWidth",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 21504092,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            },
+            {
+              "value": "C12/15",
+              "nrValue": "",
+              "shortname": "C12/15"
+            },
+            {
+              "value": "C16/20",
+              "nrValue": "",
+              "shortname": "C16/20"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21504119,
+          "inputType": "boolean",
+          "name": "Wasserundurchlässig",
+          "nameUI": "",
+          "defaultValue": true,
+          "changeable": true,
+          "active": true,
+          "typeNameTrue": "WU",
+          "typeNameFalse": "",
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcBoolean",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21504114,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21504062,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Frei definierte Decke",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21504111,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.99.4",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "DE_FRI",
+        "columns": "",
+        "itwoKey": "FRI-DE",
+        "revitFamilyBasisSettingsListIndex": "2",
+        "revitCategory": "OST_Floors",
+        "revitFamily": "Geschossdecke",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "CompoundStructWidth",
+            "name": "CompoundStructWidth",
+            "value": "Dicke"
+          },
+          {
+            "id": 21504092,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 21504119,
+            "name": "Wasserundurchlässig",
+            "value": ""
+          },
+          {
+            "id": 21504114,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 21504062,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 21504111,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Wasserundurchlässig",
+            "id": 21504119
+          },
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 21504092
+          },
+          {
+            "name": "CompoundStructWidth",
+            "id": "CompoundStructWidth"
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 21504114
+          },
+          {
+            "name": "Beschreibung",
+            "id": 21504062
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 21504111
+          }
+        ]
+      }
+    },
+    {
+      "id": 21503369,
+      "propertySettingsList": [
+        {
+          "name": "Breite",
+          "nameUI": "Dicke",
+          "origin": "Revit",
+          "id": "Breite",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "name": "Höhe",
+          "nameUI": "Höhe",
+          "origin": "Revit",
+          "id": "Höhe",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 21507601,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            },
+            {
+              "value": "C12/15",
+              "nrValue": "",
+              "shortname": "C12/15"
+            },
+            {
+              "value": "C16/20",
+              "nrValue": "",
+              "shortname": "C16/20"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21507621,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21507591,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Frei definierte Träger",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21507619,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.99.6",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "TR_FRI",
+        "columns": "",
+        "itwoKey": "FRI-TR",
+        "revitFamilyBasisSettingsListIndex": "7",
+        "revitCategory": "OST_StructuralFraming",
+        "revitFamily": "Träger 250 x 500",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "Breite",
+            "name": "Breite",
+            "value": ""
+          },
+          {
+            "id": "Höhe",
+            "name": "Höhe",
+            "value": ""
+          },
+          {
+            "id": 21507601,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 21507621,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 21507591,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 21507619,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "name": "Betonfestigkeitsklasse",
+            "id": 21507601
+          },
+          {
+            "name": "Breite",
+            "id": "Breite"
+          },
+          {
+            "name": "Höhe",
+            "id": "Höhe"
+          },
+          {
+            "name": "Schalungsoberfläche",
+            "id": 21507621
+          },
+          {
+            "name": "Beschreibung",
+            "id": 21507591
+          },
+          {
+            "name": "Ordnungszahl",
+            "id": 21507619
+          }
+        ]
+      }
+    },
+    {
+      "id": 21539562,
+      "propertySettingsList": [
+        {
+          "name": "Durchmesser",
+          "nameUI": "Durchmesser",
+          "origin": "Revit",
+          "id": "Durchmesser",
+          "min": "",
+          "max": "",
+          "defaultValue": "",
+          "unit": "cm",
+          "ifcType": "IfcLengthMeasure",
+          "ifcUnit": "CENTI-METRE",
+          "ifcUnitAbbr": "cm",
+          "active": true,
+          "get_value_from": [],
+          "get_min_from": [],
+          "get_max_from": [],
+          "required": true
+        },
+        {
+          "id": 21539567,
+          "inputType": "select",
+          "name": "Betonfestigkeitsklasse",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "C20/25",
+              "nrValue": "",
+              "shortname": "C20/25"
+            },
+            {
+              "value": "C25/30",
+              "nrValue": "",
+              "shortname": "C25/30"
+            },
+            {
+              "value": "C30/37",
+              "nrValue": "",
+              "shortname": "C30/37"
+            },
+            {
+              "value": "C35/45",
+              "nrValue": "",
+              "shortname": "C35/45"
+            },
+            {
+              "value": "C40/50",
+              "nrValue": "",
+              "shortname": "C40/50"
+            },
+            {
+              "value": "C45/55",
+              "nrValue": "",
+              "shortname": "C45/55"
+            },
+            {
+              "value": "C50/60",
+              "nrValue": "",
+              "shortname": "C50/60"
+            },
+            {
+              "value": "C12/15",
+              "nrValue": "",
+              "shortname": "C12/15"
+            },
+            {
+              "value": "C16/20",
+              "nrValue": "",
+              "shortname": "C16/20"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21539619,
+          "inputType": "select",
+          "name": "Schalungsoberfläche",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "SB1",
+              "nrValue": "",
+              "shortname": "SB1"
+            },
+            {
+              "value": "SB2",
+              "nrValue": "",
+              "shortname": "SB2"
+            },
+            {
+              "value": "SB3",
+              "nrValue": "",
+              "shortname": "SB3"
+            },
+            {
+              "value": "SB4",
+              "nrValue": "",
+              "shortname": "SB4"
+            }
+          ],
+          "active": true,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21539564,
+          "inputType": "select",
+          "name": "Beschreibung",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "Frei definierte Stütze",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        },
+        {
+          "id": 21539607,
+          "inputType": "select",
+          "name": "Ordnungszahl",
+          "nameUI": "",
+          "defaultValue": 0,
+          "values": [
+            {
+              "value": "13.99.3",
+              "nrValue": "",
+              "shortname": ""
+            }
+          ],
+          "active": false,
+          "origin": "BIMQ",
+          "bimqType": "Datatypes",
+          "ifcType": "IfcLabel",
+          "ifcUnit": ""
+        }
+      ],
+      "elementDetails": {
+        "prefix": "ST_RUND_FRI",
+        "columns": "",
+        "itwoKey": "FRI-ST",
+        "revitFamilyBasisSettingsListIndex": "5",
+        "revitCategory": "OST_StructuralColumns",
+        "revitFamily": "Stütze - rund 250",
+        "revitPattern": "<Flächenfüllung>",
+        "revitPatternColor": 32768,
+        "material": "Ortbeton - bewehrt Verputzt",
+        "tableHeaders": [
+          {
+            "id": "Durchmesser",
+            "name": "Durchmesser",
+            "value": ""
+          },
+          {
+            "id": 21539567,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 21539619,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 21539564,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 21539607,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ],
+        "typeNameSorting": [
+          {
+            "id": "Durchmesser",
+            "name": "Durchmesser",
+            "value": ""
+          },
+          {
+            "id": 21539567,
+            "name": "Betonfestigkeitsklasse",
+            "value": ""
+          },
+          {
+            "id": 21539619,
+            "name": "Schalungsoberfläche",
+            "value": ""
+          },
+          {
+            "id": 21539564,
+            "name": "Beschreibung",
+            "value": ""
+          },
+          {
+            "id": 21539607,
+            "name": "Ordnungszahl",
+            "value": ""
+          }
+        ]
+      }
+    }
+  ],
+  "__v": 0
+}
